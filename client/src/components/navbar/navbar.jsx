@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.css';
-
+import logo from './images/logo.png'
 export default function Navbar() {
 
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid ">
+                <img className="logo" src={logo} alt="" />
                     <a class="navbar-brand fs-2 fw-bold" href="#">Emergency.NET</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
