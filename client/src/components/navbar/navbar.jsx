@@ -6,6 +6,7 @@ export default function Navbar() {
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light">
+                
                 <div class="container-fluid ">
                 <img className="logo" src={logo} alt="" />
                     <a class="navbar-brand fs-2 fw-bold" href="#">Emergency.NET</a>
@@ -15,12 +16,12 @@ export default function Navbar() {
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#" className="text">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#" className="text">About</a>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link" href="#">Pricing</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -32,10 +33,11 @@ export default function Navbar() {
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
+                <button className="show">Join Us</button>
             </nav>
         </div>
     );
